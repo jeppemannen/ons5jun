@@ -13,16 +13,16 @@
 
     <body>
 
-       <div id="overlay"></div>
+       
        <!--New task modal-- end -->  
 
         <header class="menu-bar">
-            <h1>NimaBan</h1>
+            <h1>Vivify</h1>
         </header>
         <main>
 
             <div class="lists">
-
+                <!-- Modal spesifications -->
             <div class="options" id="options">
             
                 <div class="options-header">
@@ -42,7 +42,7 @@
                             <option value="! (Low priority)">!</option>
                             <option value="!! - (Medium priority)">!!</option>
                             <option value="!!! - (High priority)">!!!</option>
-                            <option value="!!!! - Very high priority">!!!!</option>
+
                         </select> <br>
 
                         
@@ -55,7 +55,7 @@
                         <input type="checkbox" value="Lars" id="inpLars">Lars
                         <input type="checkbox" value="Sondre" id="inpSondre">Sondre
                         <input type="checkbox" value="Frida" id="inpFrida">Frida
-                        <input type="checkbox" value="sofie" id="inpSofie">Sofie <br><br>
+                        <input type="checkbox" value="Sofie" id="inpSofie">Sofie <br><br>
 
                         <input data-close-button class="close-options" type="reset" id="saveBtn" value="Save"></input>
 
@@ -64,9 +64,10 @@
                 </div>
             
             </div>
-        
+            <!--Blurs out background when modal is open -->
             <div id="overlay"></div>
         
+            <!--Todo column-->
             <section class="column list">
             
                 <header>
@@ -76,7 +77,7 @@
                 <div id="todoColumn" class="list-body"></div>
                 
             </section>
-
+            <!--Doing column-->
             <section class="column list">
                 
                 <header>
@@ -85,7 +86,7 @@
                 <div id="doingColumn" class="list-body"></div>
                 
             </section>
-
+            <!--Done column-->
             <section class="column list">
                 
                 <header>
