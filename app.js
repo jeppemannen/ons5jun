@@ -125,10 +125,12 @@ function closeOptions(options) {
    const Description = inpDesc.value;
    const Date = inpDate.value;
    const Prio = inpPrio.value;
+   const Lars = inpLars.value;
+   const Sondre = inpSondre.value;
+   const Frida = inpFrida.value;
+   const Sofie = inpSofie.value;
 
 
-     
-    
 
 
      let rndmCardId = Math.random();
@@ -138,6 +140,12 @@ function closeOptions(options) {
      let rndmTrashSpanId = Math.random();
      let rndmDateId = Math.random();
      let rndmPriId = Math.random();
+     let rndmLarsId = Math.random();
+     let rndmSondreId = Math.random();
+     let rndmFridaId = Math.random();
+     let rndmSofieId = Math.random();
+
+     
 
      
      let newCard = document.createElement("div");
@@ -167,6 +175,17 @@ function closeOptions(options) {
      let newPrio = document.createElement("p");
      newPrio.setAttribute("id", rndmPriId);
      
+     let newLars = document.createElement("p");
+     newLars.setAttribute("id", rndmLarsId);
+     
+     let newSondre = document.createElement("p");
+     newSondre.setAttribute("id", rndmSondreId);
+     
+     let newFrida = document.createElement("p");
+     newFrida.setAttribute("id", rndmFridaId);
+     
+     let newSofie = document.createElement("p");
+     newSofie.setAttribute("id", rndmSofieId);
 
      
 
@@ -185,7 +204,33 @@ if (Title.length == 0){
       document.getElementById(rndmCardId).appendChild(newPrio);
       document.getElementById(rndmPriId).innerHTML = Prio;
       
+      if(inpLars.checked == true){
+            document.getElementById(rndmCardId).appendChild(newLars);
+            document.getElementById(rndmLarsId).innerHTML = Lars;
+            document.getElementById(rndmLarsId).style.fontSize = "10px";
 
+      }
+      
+      if(inpSondre.checked == true){
+          document.getElementById(rndmCardId).appendChild(newSondre);
+          document.getElementById(rndmSondreId).innerHTML = Sondre;
+          document.getElementById(rndmSondreId).style.fontSize = "10px";
+
+      }
+ 
+      if(inpFrida.checked == true){
+          document.getElementById(rndmCardId).appendChild(newFrida);
+          document.getElementById(rndmFridaId).innerHTML = Frida;
+          document.getElementById(rndmFridaId).style.fontSize = "10px";
+
+      }
+ 
+      if(inpSofie.checked == true){
+          document.getElementById(rndmCardId).appendChild(newSofie);
+          document.getElementById(rndmSofieId).innerHTML = Sofie;
+          document.getElementById(rndmSofieId).style.fontSize = "10px";
+
+      }
  
       
      document.getElementById(rndmCardId).appendChild(newDate);
